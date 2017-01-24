@@ -1,0 +1,115 @@
+#N canvas 295 389 1114 582 10;
+#X obj 31 130 hid;
+#X msg 41 100 open 17;
+#X obj 31 19 tgl 40 0 empty empty empty 17 7 0 10 -4034 -1 -1 1 1;
+#X obj 31 181 route abs key;
+#X text 97 30 Logitech GamePad F310 w/ Rainbow Buttons;
+#X obj 548 339 route btn_0 btn_1 btn_3 btn_4;
+#X obj 719 368 route btn_6 btn_7;
+#X obj 818 395 route btn_10 btn_11;
+#X obj 548 486 tgl 15 0 empty empty empty 17 7 0 10 -4034 -1 -1 0 1
+;
+#X obj 590 486 tgl 15 0 empty empty empty 17 7 0 10 -258113 -1 -1 0
+1;
+#X obj 633 486 tgl 15 0 empty empty empty 17 7 0 10 -2368 -1 -1 0 1
+;
+#X obj 676 486 tgl 15 0 empty empty empty 17 7 0 10 -257985 -1 -1 0
+1;
+#X obj 719 486 tgl 15 0 empty empty empty 17 7 0 10 -162280 -1 -1 0
+1;
+#X obj 768 486 tgl 15 0 empty empty empty 17 7 0 10 -162280 -1 -1 0
+1;
+#X obj 929 442 route btn_13 btn_14;
+#X obj 818 486 tgl 15 0 empty empty empty 17 7 0 10 -228856 -1 -1 0
+1;
+#X obj 873 486 tgl 15 0 empty empty empty 17 7 0 10 -228856 -1 -1 0
+1;
+#X obj 929 486 tgl 15 0 empty empty empty 17 7 0 10 -228856 -1 -1 0
+1;
+#X obj 984 486 tgl 15 0 empty empty empty 17 7 0 10 -228856 -1 -1 0
+1;
+#X floatatom 31 487 5 0 0 0 - - -, f 5;
+#X floatatom 104 487 5 0 0 0 - - -, f 5;
+#X floatatom 178 487 6 0 0 0 - - -, f 6;
+#X floatatom 231 487 6 0 0 0 - - -, f 6;
+#X floatatom 284 487 6 0 0 0 - - -, f 6;
+#X floatatom 337 487 6 0 0 0 - - -, f 6;
+#X obj 31 336 route abs_hat0x abs_hat0y;
+#X obj 178 368 route abs_x abs_y abs_rx abs_ry, f 36;
+#X obj 41 79 loadbang;
+#X text 66 549 D-Pad;
+#X text 178 549 Left Joystick;
+#X text 287 549 Right Joystick;
+#X obj 391 398 route abs_z abs_rz;
+#X floatatom 443 487 5 0 0 0 - - -, f 5;
+#X floatatom 391 487 5 0 0 0 - - -, f 5;
+#X text 737 549 L1 \, R1;
+#X text 820 550 Back \, Start;
+#X text 411 550 L2 \, R2;
+#X obj 31 521 s DPX;
+#X obj 104 521 s DPY;
+#X obj 178 521 s LJX;
+#X obj 231 521 s LJY;
+#X obj 284 521 s RJX;
+#X obj 337 521 s RJY;
+#X obj 391 521 s L2;
+#X obj 443 521 s R2;
+#X obj 590 520 s BB;
+#X obj 633 520 s BX;
+#X obj 676 520 s BY;
+#X obj 719 520 s L1;
+#X obj 768 520 s R1;
+#X obj 548 520 s BA;
+#X text 554 548 buttons: A \, B \, X \, Y;
+#X obj 818 520 s BACK;
+#X obj 873 520 s START;
+#X obj 929 520 s LJCLICK;
+#X obj 994 520 s RJCLICK;
+#X text 923 550 Left \, Right Joystick Click;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 25 0;
+#X connect 3 1 5 0;
+#X connect 5 0 8 0;
+#X connect 5 1 9 0;
+#X connect 5 2 10 0;
+#X connect 5 3 11 0;
+#X connect 5 4 6 0;
+#X connect 6 0 12 0;
+#X connect 6 1 13 0;
+#X connect 6 2 7 0;
+#X connect 7 0 15 0;
+#X connect 7 1 16 0;
+#X connect 7 2 14 0;
+#X connect 8 0 50 0;
+#X connect 9 0 45 0;
+#X connect 10 0 46 0;
+#X connect 11 0 47 0;
+#X connect 12 0 48 0;
+#X connect 13 0 49 0;
+#X connect 14 0 17 0;
+#X connect 14 1 18 0;
+#X connect 15 0 52 0;
+#X connect 16 0 53 0;
+#X connect 17 0 54 0;
+#X connect 18 0 55 0;
+#X connect 19 0 37 0;
+#X connect 20 0 38 0;
+#X connect 21 0 39 0;
+#X connect 22 0 40 0;
+#X connect 23 0 41 0;
+#X connect 24 0 42 0;
+#X connect 25 0 19 0;
+#X connect 25 1 20 0;
+#X connect 25 2 26 0;
+#X connect 26 0 21 0;
+#X connect 26 1 22 0;
+#X connect 26 2 23 0;
+#X connect 26 3 24 0;
+#X connect 26 4 31 0;
+#X connect 27 0 1 0;
+#X connect 31 0 33 0;
+#X connect 31 1 32 0;
+#X connect 32 0 44 0;
+#X connect 33 0 43 0;

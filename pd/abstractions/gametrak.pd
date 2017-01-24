@@ -1,51 +1,51 @@
-#N canvas 220 169 1334 677 10;
-#X text 97 61 Vendor and Product hex values for "In2Games Ltd. Game-Trak
+#N canvas 73 205 621 534 10;
+#X text 97 67 Vendor and Product hex values for "In2Games Ltd. Game-Trak
 V1.3";
-#X msg 107 106 open 0x14b7 0x0982;
-#X msg 132 128 info;
-#X text 166 128 Stuff about the GameTrak;
-#X msg 141 162 refresh;
-#X text 193 162 Refresh device list;
-#X obj 170 232 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+#X msg 107 112 open 0x14b7 0x0982;
+#X msg 132 134 info;
+#X text 166 134 Stuff about the GameTrak;
+#X msg 141 168 refresh;
+#X text 193 168 Refresh device list;
+#X obj 170 238 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 10 256;
-#X text 228 229 poll delay (ms);
-#X text 227 249 start polling;
-#X msg 183 278 poll 0;
-#X text 232 276 stop polling;
-#X obj 19 8 loadbang;
-#X obj 18 26 s load;
-#X obj 107 86 r load;
-#X obj 460 162 r load;
-#X obj 81 23 inlet;
-#X obj 12 307 route key abs;
-#X obj 13 447 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0 1
+#X text 228 235 poll delay (ms);
+#X text 227 255 start polling;
+#X msg 183 284 poll 0;
+#X text 232 282 stop polling;
+#X obj 19 14 loadbang;
+#X obj 18 32 s load;
+#X obj 107 92 r load;
+#X obj 460 168 r load;
+#X obj 81 29 inlet;
+#X obj 12 313 route key abs;
+#X obj 13 453 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0 1
 ;
-#X obj 43 447 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0 1
+#X obj 43 453 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0 1
 ;
-#X obj 73 447 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0 1
+#X obj 73 453 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0 1
 ;
-#X obj 103 447 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
+#X obj 103 453 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
 1;
-#X obj 133 447 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
+#X obj 133 453 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
 1;
-#X obj 163 447 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
+#X obj 163 453 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
 1;
-#X obj 193 447 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
+#X obj 193 453 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
 1;
-#X obj 223 447 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
+#X obj 223 453 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
 1;
-#X obj 253 447 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
+#X obj 253 453 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
 1;
-#X obj 283 447 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
+#X obj 283 453 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
 1;
-#X obj 313 447 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
+#X obj 313 453 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
 1;
-#X obj 343 447 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
+#X obj 343 453 tgl 25 0 empty empty empty 0 -6 0 8 -195568 -1 -1 0
 1;
-#X obj 13 405 route btn_0 btn_1 btn_2 btn_3 btn_4 btn_5 btn_6 btn_7
+#X obj 13 411 route btn_0 btn_1 btn_2 btn_3 btn_4 btn_5 btn_6 btn_7
 btn_8 btn_9 btn_10 btn_11;
-#X msg 148 180 print;
-#X text 190 180 Print the device and element lists;
+#X msg 148 186 print;
+#X text 190 186 Print the device and element lists;
 #N canvas 757 80 411 235 see 0;
 #N canvas 108 318 543 264 route 0;
 #X obj 27 14 inlet;
@@ -85,7 +85,7 @@ type vendorID productID;
 #X connect 17 8 13 0;
 #X connect 17 9 15 0;
 #X restore 117 70 pd route info;
-#X obj 81 96 tgl 15 0 empty empty open 0 -6 0 8 -262144 -1 -1 1 1;
+#X obj 81 96 tgl 15 0 empty empty open 0 -6 0 8 -262144 -1 -1 0 1;
 #X obj 110 22 inlet;
 #X obj 123 43 print info;
 #X symbolatom 304 93 0 0 0 0 productID - -;
@@ -109,39 +109,39 @@ type vendorID productID;
 #X connect 0 9 4 0;
 #X connect 2 0 0 0;
 #X connect 2 0 3 0;
-#X restore 162 304 pd see device info;
-#X floatatom 54 362 6 0 0 0 - - -, f 6;
-#X floatatom 104 362 6 0 0 0 - - -, f 6;
-#X floatatom 154 362 6 0 0 0 - - -, f 6;
-#X floatatom 204 362 6 0 0 0 - - -, f 6;
-#X floatatom 254 362 6 0 0 0 - - -, f 6;
-#X floatatom 304 362 6 0 0 0 - - -, f 6;
-#X floatatom 352 346 6 0 0 0 - - -, f 6;
-#X floatatom 432 344 5 0 0 0 - - -, f 5;
-#X obj 54 326 route abs_x abs_y abs_z abs_rx abs_ry abs_rz;
-#X obj 352 325 route abs_hat0x abs_hat0y;
-#X obj 353 368 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+#X restore 162 310 pd see device info;
+#X floatatom 54 368 6 0 0 0 - - -, f 6;
+#X floatatom 104 368 6 0 0 0 - - -, f 6;
+#X floatatom 154 368 6 0 0 0 - - -, f 6;
+#X floatatom 204 368 6 0 0 0 - - -, f 6;
+#X floatatom 254 368 6 0 0 0 - - -, f 6;
+#X floatatom 304 368 6 0 0 0 - - -, f 6;
+#X floatatom 352 352 6 0 0 0 - - -, f 6;
+#X floatatom 432 350 5 0 0 0 - - -, f 5;
+#X obj 54 332 route abs_x abs_y abs_z abs_rx abs_ry abs_rz;
+#X obj 352 331 route abs_hat0x abs_hat0y;
+#X obj 353 374 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
 -1;
-#X obj 433 369 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+#X obj 433 375 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
 -1;
-#X msg 143 144 close;
-#X text 180 144 Close the device;
-#X obj 107 283 hid 0;
-#X text 133 7 NOTE: If you instantiate more than one of this object
+#X msg 143 150 close;
+#X text 180 150 Close the device;
+#X obj 107 289 hid 0;
+#X text 133 13 NOTE: If you instantiate more than one of this object
 in the same patch \, neither object will get all of the data from your
 GameTrak. So don't do that pls.;
-#X obj 54 384 outlet;
-#X obj 11 483 outlet;
-#X obj 103 384 outlet;
-#X obj 154 385 outlet;
-#X obj 204 385 outlet;
-#X obj 253 385 outlet;
-#X obj 304 384 outlet;
-#X obj 448 191 delay 100;
-#X msg 168 208 set 10;
-#X obj 257 211 delay 10;
-#X msg 167 253 poll \$1;
-#X obj 229 210 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 54 390 outlet;
+#X obj 11 489 outlet;
+#X obj 103 390 outlet;
+#X obj 154 391 outlet;
+#X obj 204 391 outlet;
+#X obj 253 391 outlet;
+#X obj 304 390 outlet;
+#X obj 448 197 delay 100;
+#X msg 168 214 set 10;
+#X obj 257 217 delay 10;
+#X msg 167 259 poll \$1;
+#X obj 229 216 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X connect 1 0 47 0;
 #X connect 2 0 47 0;
